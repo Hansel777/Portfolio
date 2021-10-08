@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(236.85deg, #ffc2f9 27.26%, #3468A7 96.03%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background: #ffdcf9;
+  color: #1C1C1C;
+  margin: 64px;
+  padding: 64px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0E1D2F;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.perfil {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.perfil .perfil-foto {
+  border-style: solid;
+  border-radius: 400px;
+  border-width: 5px;
+  border-color: #E0FFFF;
+}
+
+.perfil-foto {
+  border-radius: 400px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.titulo h2 {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.perfil-links {
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  background: #ffdcf9;
+  padding: 4px;
+  width: 75px;
+  position: relative;
+  bottom: 99px; /*sobe */
+  left:395px; /* move esquerda */
+}
+
+.perfil-links a {
+  text-decoration: none;
+}
+
+.codepen {
+  text-decoration: none;
+  width: 28px; 
+  position: relative;
+  top: 2px;
+}
+
+.github {
+  text-decoration: none;
+  width: 28px; 
+  position: relative;
+  top: 2px;
+  left: 15px;
+}
+
+.tema button{
+  background: #ECF4FF;
+  font-size: 20px;
+  font-weight: 400px;
+  padding: 8px 16px;
+  border-radius: 100px;
+}
+
+.Projetos {
+  display: flex;
+  flex-direction: column;
+  background: #b6e4f7;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  font-size: 35px;
+  align-items: center;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+.Projetos a {
+  font-size: 26px;
+}
+
+a:hover {
+  color: #6A5ACD;
+}
+
+.Projetos li{
+  line-height: 58px;
+  list-style-type: none;
+  margin: 25px;
+}
+
+.borda-imagens{
+  background:	#F0F8FF;
+  border: black;
+  border-radius: 25px;
+  margin-bottom: 16px;
+  width: 950px;
+  text-align: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.imagens {
+  width: 870px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
+}
+
+.dark .container {
+  background: #292c2c;
+  color: #F6F6F6;
+}
+
+.dark .Projetos {
+  background:	#9ea7a5;
+  color: #1C1C1C ;
+}
+
+.dark .tema button {
+  background:	#333439;
+  color: #F6F6F6;
+  border: 3px solid #F7F7F7;
+}
+
+.dark .perfil-links {
+  background: #9ea7a5;
+}
+
+.dark .borda-imagens {
+  background: #D3D3D3;
+  border-color: #D3D3D3;
+}
+
+/* Botao dark mode */
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 100px;
+  height: 50px;
+  background: linear-gradient(236.85deg, #ff5ff9 27.26%, #c8ebff 96.03%);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.dark label:after {
+  background: #333439;
+}
+
+input:checked + label {
+  background: linear-gradient(236.85deg, #c2c1be 27.26%, #ffffff 96.03%);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 90px;
+}
+
+/**/
